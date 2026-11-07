@@ -163,6 +163,7 @@
       body: JSON.stringify({ action, args: args || [], idToken: t.t }), redirect: 'follow' });
     if (!res.ok) throw new Error('NETWORK: เชื่อมต่อระบบไม่สำเร็จ (' + res.status + ')');
     const out = await res.json();
+    if (out.ms) console.info('p191 api', action, 'server ms', out.ms);
     if (out.ok) return out.result;
     const err = new Error(out.error.code + ': ' + out.error.message);
     err.code = out.error.code;
@@ -253,8 +254,18 @@
     document.dispatchEvent(new Event('DOMContentLoaded'));
     document.querySelectorAll('[data-p191-signout]').forEach((a) => a.addEventListener('click', (ev) => { ev.preventDefault(); signOut(); }));
   }
-  function loading(text) { css(); showBar(text); }
-  function doneLoading() { const b = document.getElementById('p191-bar'); if (b) b.remove(); }
+  let tick = null;
+  function loading(text) {
+    css();
+    const t0 = Date.now();
+    const draw = () => {
+      const s = Math.round((Date.now() - t0) / 1000);
+      showBar(text + (s >= 2 ? ' ' + s + ' วินาที' : '') + (s >= 4 ? ' (ครั้งแรกอาจใช้ถึง 15 วินาที ครั้งต่อไปจะขึ้นทันที)' : ''));
+    };
+    draw();
+    tick = setInterval(draw, 1000);
+  }
+  function doneLoading() { if (tick) clearInterval(tick); tick = null; const b = document.getElementById('p191-bar'); if (b) b.remove(); }
   const when = (iso) => { try { return new Date(iso).toLocaleString('th-TH', { dateStyle: 'medium', timeStyle: 'short' }); } catch (e) { return iso; } };
 
   async function start() {
