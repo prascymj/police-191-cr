@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="th" data-p191="import">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เหตุ 191 จ.เชียงราย</title>
+<script src="config.js"></script>
+<script src="shim.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Phone-first, same look as the phone page (design v2): ADT navy and sky, 16 px cards, pill controls. */
+  :root{--navy:#061C90;--sky:#1CA4E1;--on:#FFFFFF;--fg:#121317;--fg2:#3C4150;--muted:#585C66;--faint:#9AA0AD;--line:#ECEEF4;--line2:#DDE1EA;
+  --tint:#E8ECFA;--tint2:#F3F5FD;--tintLine:#D4DBF5;--chip:#F1F3F8;--bad:#A01B2E;--badBg:#FCEDEF;--ok:#176B3A;--okBg:#E6F4EC;
+  --shadow:0 1px 2px rgba(16,24,64,.04),0 8px 24px rgba(16,24,64,.06)}
+  *{box-sizing:border-box}
+  [hidden]{display:none !important}
+  html,body{margin:0;background:#F3F5F9;color:var(--fg);font-family:"IBM Plex Sans Thai",Sarabun,"Noto Sans Thai",Tahoma,sans-serif;font-size:15px;line-height:1.45}
+  /* Opened from the full dashboard (?from=dashboard): the dashboard's font, and หน้าหลัก goes back to it (7 Nov 2026). */
+  body.from-dash{font-family:Sarabun,"TH Sarabun New","Noto Sans Thai",Tahoma,sans-serif}
+  /* ...and the dashboard's look (dashboard-spec/DESIGN.md tokens): grey page, white panels with a 1px line and 4px corners,
+     no shadows, title with the navy rule, small framed controls, text links top right (7 Nov 2026). */
+  body.from-dash{background:#f6f7f9;--line:#e9ebf0;--line2:#d6d9e0}
+  .from-dash main{max-width:1280px;padding:0 16px 40px;background:transparent}
+  .from-dash .m-top{padding:8px 0 0;justify-content:flex-end;gap:16px;font-size:13px}
+  .from-dash .m-brand{display:none}
+  .from-dash .m-back{min-height:0;padding:0;border-radius:0;background:none;font-size:13px;font-weight:400;text-decoration:underline;color:#061c90}
+  .from-dash .m-title{padding:4px 0 12px;margin-bottom:12px;border-bottom:2px solid #061c90}
+  .from-dash h1{font-size:18px;line-height:1.35}
+  .from-dash .m-title .muted{color:#061c90;font-weight:600;letter-spacing:.02em;margin-top:2px}
+  .from-dash .card{border:1px solid #d6d9e0;border-radius:4px;box-shadow:none;padding:16px;margin-top:12px}
+  .from-dash h2{font-size:15px;font-weight:500}
+  .from-dash .notice{border-radius:4px}
+  .from-dash .step{width:22px;height:22px;border-radius:4px;font-size:12px}
+  .from-dash .drop{border:1px dashed #d6d9e0;border-radius:4px;background:#eef1f6}
+  .from-dash .btn{min-height:32px;padding:4px 12px;border:1px solid #061c90;border-radius:4px;background:transparent;color:#061c90;font-size:13px;font-weight:500}
+  .from-dash .btn:hover:not(:disabled),.from-dash .btn.primary{background:#061c90;color:#FFFFFF}
+  .from-dash .btn.big{min-height:40px;width:auto;padding:6px 20px;font-size:15px;font-weight:600}
+  .from-dash .notice{background:#eef1f6;border-color:#d6d9e0;color:#121317}
+  .from-dash .notice.bad{background:var(--badBg);border-color:#F2C6CD;color:var(--bad)}
+  .from-dash .notice.good{background:var(--okBg);border-color:#BFE2CD;color:var(--ok)}
+  .from-dash .chip{min-height:0;padding:4px 8px;border:1px solid #d6d9e0;border-radius:4px;background:#FFFFFF;color:#121317;line-height:1.4}
+  .from-dash .chip[aria-pressed=true]{background:#061c90;border-color:#061c90;color:#FFFFFF}
+  .from-dash select{min-height:32px;border-color:#d6d9e0;border-radius:4px}
+  .from-dash .tag{border-radius:2px;border:1px solid #d6d9e0;background:#FFFFFF}
+  .from-dash .tag.ok{border-color:#BFE2CD}.from-dash .tag.need{border-color:#F2C6CD}.from-dash .tag.over{border-color:#9fd3ea}
+  .from-dash .scroll{border-color:#d6d9e0;border-radius:4px}
+  .from-dash label.check{border-radius:4px}
+  @media (max-width: 720px){
+    .from-dash main{max-width:none}
+    .from-dash .btn.big{width:100%}
+    .from-dash .scroll tr{border-color:#d6d9e0;border-radius:4px}
+    .from-dash td.note{border-radius:4px}
+  }
+  a{color:var(--navy)}
+  main{max-width:1100px;margin:0 auto;padding:0 20px 40px;background:#FFFFFF;min-height:100vh}
+  .m-top{padding:20px 0 0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .m-brand{font-size:20px;font-weight:700;color:var(--navy);text-decoration:none}
+  .m-brand span{font-size:15px;font-weight:500;color:var(--muted)}
+  .m-back{min-height:40px;padding:0 16px;border-radius:999px;background:var(--tint);color:var(--navy);font-size:14px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center}
+  .m-title{padding:16px 0 4px}
+  h1{font-size:22px;margin:0;font-weight:600}
+  .muted{color:var(--muted);font-size:13px}
+  .card{background:#FFFFFF;border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px;box-shadow:var(--shadow)}
+  h2{font-size:16px;margin:0 0 10px;font-weight:600;display:flex;align-items:center;gap:10px}
+  .step{width:30px;height:30px;flex:none;border-radius:10px;background:var(--navy);color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700}
+  .drop{border:1.5px dashed var(--line2);border-radius:14px;padding:18px 16px;text-align:center;background:var(--tint2)}
+  .drop p{margin:6px 0}
+  .drop.over{border-color:var(--sky);background:var(--tint)}
+  .drag{color:var(--muted);font-size:13px}
+  .btn{font:inherit;font-size:14px;font-weight:600;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--chip);color:var(--fg2);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+  .btn.primary{background:var(--navy);color:var(--on)}
+  .btn.big{min-height:52px;width:100%;font-size:16px}
+  .btn:disabled{opacity:.45;cursor:default}
+  .btn:focus-visible,.chip:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+  th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:500;background:#FFFFFF}
+  .kv th{width:12rem}
+  .notice{padding:10px 14px;border-radius:12px;background:var(--tint2);border:1px solid var(--tintLine);color:var(--navy);font-size:13px;margin:10px 0 0}
+  .notice.bad{background:var(--badBg);border-color:#F2C6CD;color:var(--bad)}
+  .notice.good{background:var(--okBg);border-color:#BFE2CD;color:var(--ok)}
+  .bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+  .chip{font:inherit;font-size:13px;min-height:38px;padding:0 14px;border:0;border-radius:10px;background:var(--chip);color:var(--fg2);cursor:pointer}
+  .chip[aria-pressed=true]{background:var(--navy);color:var(--on);font-weight:600}
+  .count{font-weight:700;color:var(--navy)}
+  .scroll{overflow-x:auto;max-height:70vh;overflow-y:auto;border:1px solid var(--line);border-radius:14px}
+  .scroll table{min-width:860px}
+  .scroll th{position:sticky;top:0;z-index:1}
+  td.note{min-width:18rem;max-width:32rem;white-space:normal}
+  td.when{white-space:nowrap}
+  select{font:inherit;font-size:14px;min-height:40px;padding:0 10px;border:1px solid var(--line2);border-radius:10px;background:#FFFFFF;max-width:13rem}
+  select.need{border-color:var(--bad);background:var(--badBg)}
+  tr.done td{background:#FBFCFE}
+  .tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted);white-space:nowrap}
+  .tag.ok{background:var(--okBg);color:var(--ok)}
+  .tag.need{background:var(--badBg);color:var(--bad)}
+  .tag.over{background:#E3F3FB;color:#0B5F86}
+  label.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--badBg)}
+  label.check input{width:20px;height:20px;flex:none;margin:2px 0 0}
+  #publish,#spublish{margin-top:6px}
+  .kv td .tag{margin:2px 6px 2px 0;white-space:normal}
+  @media (max-width: 720px){
+    main{max-width:480px;padding:0 16px 40px}
+    .drag{display:none}
+    .kv th{width:auto;white-space:nowrap}
+    .kv th,.kv td{display:block;border:none;padding:0}
+    .kv tr{display:block;padding:8px 0;border-bottom:1px solid var(--line)}
+    .kv th{font-size:12px}
+    #bulk{width:100%}
+    .scroll{max-height:none;overflow:visible;border:0;border-radius:0}
+    .scroll table{min-width:0}
+    .scroll thead{display:none}
+    .scroll tbody{display:flex;flex-direction:column;gap:10px}
+    .scroll tr{display:block;border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#FFFFFF}
+    .scroll tr.done{background:#FBFCFE}
+    .scroll td{display:block;border:none;padding:2px 0;background:transparent !important}
+    .scroll td[data-label]::before{content:attr(data-label) "  ";color:var(--muted);font-size:12px}
+    td.note{max-width:none;min-width:0;padding:8px 10px !important;margin:6px 0;border-radius:10px;background:var(--tint2) !important;font-size:14px}
+    select{max-width:100%;width:100%;margin-top:4px}
+  }
+</style>
+</head>
+<body class="">
+<main>
+  <header class="m-top">
+    <a class="m-brand" href="__P191_HOME__">เหตุ 191 <span>จ.เชียงราย</span></a>
+    <a class="m-back" href="__P191_HOME__">หน้าหลัก</a>
+  </header>
+  <div class="m-title">
+    <h1>นำเข้าข้อมูลรายเดือน</h1>
+    <div class="muted">ตำรวจภูธรจังหวัดเชียงราย บัญชี __P191_EMAIL__</div>
+  </div>
+
+  <section class="card" id="step-file">
+    <h2><span class="step">1</span>เลือกไฟล์จากระบบ 191</h2>
+    <div class="drop" id="drop">
+      <p><label class="btn primary big" for="file">เลือกไฟล์ .xlsx หรือ .xls</label></p>
+      <p class="drag">หรือลากไฟล์มาวางที่นี่</p>
+      <input id="file" type="file" accept=".xlsx,.xls" hidden>
+      <p class="muted">รับได้ 2 แบบ: ไฟล์รายเหตุ (.xlsx) และรายงานสรุปการรับแจ้งเหตุ 191 ของศูนย์ 191 (.xls) ระบบแยกให้เอง ทำทีละไฟล์</p>
+      <p class="muted">ไฟล์ถูกอ่านในเครื่องนี้เท่านั้น ระบบส่งขึ้นเฉพาะข้อมูลที่ไม่ระบุตัวตน ไม่ส่งไฟล์ ข้อความปิดเหตุ หรือชื่อผู้ลงนามท้ายรายงานสรุป</p>
+    </div>
+    <div id="file-msg"></div>
+  </section>
+
+  <section class="card" id="step-report" hidden>
+    <h2><span class="step">2</span>รายงานก่อนเผยแพร่</h2>
+    <table class="kv"><tbody id="report"></tbody></table>
+    <div id="replace-msg"></div>
+    <label class="check" id="shorter-box" hidden><input type="checkbox" id="confirm-shorter"><span>ยืนยันให้แทนข้อมูลเดิม ทั้งที่ไฟล์ใหม่ครอบคลุมจำนวนวันน้อยกว่า</span></label>
+  </section>
+
+  <section class="card" id="step-review" hidden>
+    <h2><span class="step">3</span>ทวนผลการตรวจสอบ</h2>
+    <p class="muted">อ่านข้อความปิดเหตุแล้วเลือกกลุ่มสุดท้าย รายการ "ไม่ระบุผล" ต้องเลือกทีละรายการก่อน จากนั้นกดยอมรับกลุ่มตามกฎของรายการที่เหลือได้ทีเดียว</p>
+    <div class="bar">
+      <span>ทวนแล้ว <span class="count" id="prog-decided">0</span> จาก <span id="prog-total">0</span> แถว</span>
+      <span class="muted" id="prog-unknown"></span>
+      <span class="muted" id="prog-changed"></span>
+    </div>
+    <div class="bar" role="group" aria-label="กรองรายการ">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+      <button type="button" class="chip" data-filter="pending" aria-pressed="false">ยังไม่ทวน</button>
+      <button type="button" class="chip" data-filter="unknown" aria-pressed="false">ไม่ระบุผล</button>
+      <button type="button" class="chip" data-filter="changed" aria-pressed="false">แก้จากกฎแล้ว</button>
+      <button type="button" class="btn" id="bulk">ยอมรับกลุ่มตามกฎของรายการที่เหลือ</button>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>รับแจ้ง</th><th>ประเภทเหตุ</th><th>สภ.</th><th>ข้อความปิดเหตุ</th><th>กลุ่มตามกฎ</th><th>กลุ่มสุดท้าย</th><th>สถานะ</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="step-publish" hidden>
+    <h2><span class="step">4</span>เผยแพร่</h2>
+    <p class="muted">เมื่อทวนครบทุกแถวแล้ว กดเผยแพร่เพื่อแทนข้อมูลของเดือนนี้ใน dashboard ถ้าปิดหน้านี้ก่อน จะไม่มีอะไรเปลี่ยน</p>
+    <button type="button" class="btn primary big" id="publish" disabled>เผยแพร่ข้อมูลเดือนนี้</button>
+    <div id="publish-msg"></div>
+  </section>
+
+  <section class="card" id="step-sreport" hidden>
+    <h2><span class="step">2</span>รายงานก่อนเผยแพร่ <span class="tag">รายงานสรุป</span></h2>
+    <table class="kv"><tbody id="sreport"></tbody></table>
+    <div id="smsgs"></div>
+    <div id="scheck"></div>
+  </section>
+
+  <section class="card" id="step-spublish" hidden>
+    <h2><span class="step">3</span>เผยแพร่</h2>
+    <p class="muted">รายงานสรุปมีแต่จำนวน จึงไม่มีขั้นทวนผลรายแถว กดเผยแพร่เพื่อแทนรายงานสรุปของเดือนนี้ใน dashboard เดือนอื่นและข้อมูลรายเหตุไม่เปลี่ยน ถ้าปิดหน้านี้ก่อน จะไม่มีอะไรเปลี่ยน</p>
+    <button type="button" class="btn primary big" id="spublish" disabled>เผยแพร่รายงานสรุปเดือนนี้</button>
+    <div id="spublish-msg"></div>
+  </section>
+</main>
+
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"
+  integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+<!-- rules: from the API after sign-in -->
+<!-- Generated from webapp/pipeline.js by webapp/tools/build-src.mjs. Do not edit here. -->
+<script type="text/p191-deferred">
+/* Police 191 data pipeline, browser edition.
+ * JavaScript port of dashboard-spec/pipeline/build_dataset.py. Rules: dashboard-spec/DATA.md section 2 and 4.
+ * Parity with the Python version is checked byte for byte by tools/pipeline-parity.mjs; change both together.
+ *
+ * Two layers:
+ *   readWorkbook(arrayBuffer, name, mtime)  SheetJS -> rows of text -> readRows()   (browser only, needs window.XLSX)
+ *   readRows(rows, name, mtime)             rows of text (row 1 title, row 2 headers) -> {name, start, end, rows}
+ *   build(files)                            chosen files -> {records, coverage, incidentsCsv, coverageCsv, log, counts}
+ * No imports; exposes globalThis.PoliceData so the same file runs in the browser and in Node (vm). Needs P191_RULES (rules.js).
+ */
+(function (root) {
+  'use strict';
+
+  const TH_MONTH = { 'ม.ค.': 1, 'ก.พ.': 2, 'มี.ค.': 3, 'เม.ย.': 4, 'พ.ค.': 5, 'มิ.ย.': 6,
+    'ก.ค.': 7, 'ส.ค.': 8, 'ก.ย.': 9, 'ต.ค.': 10, 'พ.ย.': 11, 'ธ.ค.': 12 };
+  const TH_WEEKDAY = ['จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.', 'อา.']; // index = Python weekday(), Monday = 0
+
+  const NF = 'ไม่พบผู้ก่อเหตุ', HD = 'ระงับเหตุที่เกิดเหตุ', TK = 'นำตัวหรือนำส่ง', NE = 'ไม่ใช่เหตุตามแจ้ง', UN = 'ไม่ระบุผล';
+  const OUTCOMES = [NF, HD, TK, NE, UN];
+
+  // The outcome rules and the manual decisions are private (rules.js, 7 Nov 2026): not in this file, so the public site
+  // carries none of them. They come from window.P191_RULES (rules.js in Node and the old Apps Script pages; the API's
+  // config for signed-in pages on GitHub Pages) and are compiled on first use. PoliceData.reload() after they change.
+  let R = null;
+  function rules() {
+    if (R) return R;
+    const src = root.P191_RULES;
+    if (!src || !src.patterns) throw new Error('ยังไม่ได้โหลดกฎจัดผล (P191_RULES)');
+    const re = (k) => new RegExp(src.patterns[k], 'u');
+    R = { version: src.version, overrides: src.overrides || {}, TAKEN: re('taken'), NOT_EVENT: re('notEvent'), NOT_FOUND: re('notFound'),
+      HANDLED: re('handled'), TAKEN_HOME: re('takenHome'), BROUGHT_IN: re('broughtIn'), NF_BUT_ACTED: re('nfButActed') };
+    return R;
+  }
+
+  const REQUIRED = ['เหตุ:', 'พท.รับผิดชอบ:', 'วันที่รับแจ้งเหตุ:', 'เวลาสั่งการเหตุ:', 'เวลาถึงที่เกิดเหตุ:', 'จนท.ปฏิบัติงาน:', 'ปิดเหตุ:'];
+  const CSV_COLUMNS = ['id', 'month', 'received', 'date', 'day', 'weekday', 'hour', 'type', 'station', 'unit',
+    'dispatch_min', 'travel_min', 'arrival_min', 'outcome'];
+
+  // Python str.split() whitespace, so cleaning matches build_dataset.clean() exactly.
+  const PY_SPACE = new RegExp('[\\t\\n\\v\\f\\r\\x1c-\\x1f \\x85\\xa0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]+');
+
+  function clean(v) {
+    return String(v == null ? '' : v).replace(/ /g, ' ').split(PY_SPACE).filter((s) => s !== '').join(' ');
+  }
+
+  function asciiDigits(s) {
+    return s.replace(/\p{Nd}/gu, (d) => String(d.codePointAt(0) - (/[๐-๙]/u.test(d) ? 0x0e50 : 0x30)));
+  }
+
+  // A timestamp is kept as UTC milliseconds of the local wall time; no time zone is applied anywhere.
+  function parseWhen(v) {
+    const m = clean(v).match(/(\p{Nd}+) (\S+) (25\p{Nd}\p{Nd}) เวลา (\p{Nd}+):(\p{Nd}+):(\p{Nd}+)/u);
+    if (!m) throw new Error(`unreadable date/time: ${JSON.stringify(v)}`);
+    const n = m.slice(1).map((x, i) => (i === 1 ? x : Number(asciiDigits(x))));
+    if (!(n[1] in TH_MONTH)) throw new Error(`unknown Thai month: ${n[1]}`);
+    return Date.UTC(n[2] - 543, TH_MONTH[n[1]] - 1, n[0], n[3], n[4], n[5]);
+  }
+
+  const pad = (n, w) => String(n).padStart(w || 2, '0');
+  function iso(ms) {
+    const d = new Date(ms);
+    return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}T${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())}`;
+  }
+  const isoDate = (ms) => iso(ms).slice(0, 10);
+  const monthOf = (ms) => iso(ms).slice(0, 7);
+  const DAY = 86400000;
+
+  function classify(note) {
+    const r = rules();
+    if (r.NOT_EVENT.test(note)) return NE;
+    if (r.TAKEN_HOME.test(note) && !r.BROUGHT_IN.test(note)) return HD;
+    if (r.TAKEN.test(note)) return TK;
+    if (r.NOT_FOUND.test(note) && !r.NF_BUT_ACTED.test(note)) return NF;
+    if (r.HANDLED.test(note)) return HD;
+    return UN;
+  }
+
+  function normaliseUnit(v) {
+    let u = clean(v).replace(/\s*(ออก\s*)?ว\.?\s*4$/u, '');
+    u = u.replace(/\s+/gu, ' ');
+    if (u === 'สายตรวจจยย.') return 'สายตรวจ จยย.';
+    if (/^ร้อยเวร 20[ ,]+201$/u.test(u)) return 'ร้อยเวร 20 สายตรวจ 201';
+    return u;
+  }
+
+  /** rows: array of arrays of cell text (row 0 = title, row 1 = headers). Cells may be '' or null. */
+  function readRows(rows, name, mtime) {
+    const title = clean((rows[0] || [])[0]);
+    const m = title.match(/(\p{Nd}\p{Nd})-(\p{Nd}\p{Nd})-(25\p{Nd}\p{Nd}) ถึง (\p{Nd}\p{Nd})-(\p{Nd}\p{Nd})-(25\p{Nd}\p{Nd})/u);
+    if (!m) throw new Error(`${name}: no period in the title row`);
+    const g = m.slice(1).map((x) => Number(asciiDigits(x)));
+    const start = Date.UTC(g[2] - 543, g[1] - 1, g[0]);
+    const end = Date.UTC(g[5] - 543, g[4] - 1, g[3]);
+    const header = (rows[1] || []).map(clean);
+    const col = {};
+    header.forEach((h, i) => { col[h] = i; });
+    REQUIRED.forEach((need) => { if (!(need in col)) throw new Error(`${name}: missing column ${need}`); });
+    const out = [];
+    for (let r = 2; r < rows.length; r++) {
+      const row = rows[r] || [];
+      if (row[0] == null || row[0] === '') continue;
+      const cell = (h) => row[col[h]];
+      const caseNo = 'หมายเลขเหตุ:' in col ? clean(cell('หมายเลขเหตุ:')) : '';
+      if (/^\p{Nd}+(\.\p{Nd}+)?e\+?\p{Nd}+$/iu.test(caseNo)) {
+        throw new Error(`${name}: case number stored as a number (${caseNo}); export it as text`);
+      }
+      out.push({
+        file: name,
+        case_no: caseNo,
+        type: clean(cell('เหตุ:')),
+        station: clean(cell('พท.รับผิดชอบ:')).split('สถานีตำรวจภูธร').join('สภ.') || 'ไม่ระบุ สภ.',
+        unit: normaliseUnit(cell('จนท.ปฏิบัติงาน:')),
+        received: parseWhen(cell('วันที่รับแจ้งเหตุ:')),
+        dispatched: parseWhen(cell('เวลาสั่งการเหตุ:')),
+        arrived: parseWhen(cell('เวลาถึงที่เกิดเหตุ:')),
+        note: clean(cell('ปิดเหตุ:'))
+      });
+    }
+    return { name, mtime: mtime || 0, start, end, rows: out };
+  }
+
+  /** Browser only: SheetJS must be loaded as window.XLSX. */
+  function readWorkbook(buffer, name, mtime) {
+    const X = root.XLSX;
+    if (!X) throw new Error('SheetJS (XLSX) is not loaded');
+    const wb = X.read(buffer, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const rows = X.utils.sheet_to_json(ws, { header: 1, raw: false, defval: '', blankrows: true });
+    return readRows(rows, name, mtime);
+  }
+
+  const days = (f) => Math.round((f.end - f.start) / DAY);
+  const cmpTuple = (a, b) => {
+    for (let i = 0; i < a.length; i++) { if (a[i] < b[i]) return -1; if (a[i] > b[i]) return 1; }
+    return 0;
+  };
+
+  /** One file per month: the widest period, then the later end date, then the newer file time. */
+  function chooseFiles(files, log) {
+    const byMonth = {};
+    files.forEach((f) => {
+      if (monthOf(f.start) !== monthOf(f.end)) throw new Error(`${f.name}: period spans months; split it first`);
+      (byMonth[monthOf(f.start)] = byMonth[monthOf(f.start)] || []).push(f);
+    });
+    const chosen = {};
+    Object.keys(byMonth).sort().forEach((month) => {
+      const fs = byMonth[month].slice().sort((a, b) => -cmpTuple([days(a), a.end, a.mtime], [days(b), b.end, b.mtime]));
+      chosen[month] = fs[0];
+      log.push(`${month}: use ${fs[0].name} (${isoDate(fs[0].start)} to ${isoDate(fs[0].end)}, ${fs[0].rows.length} rows)`);
+      fs.slice(1).forEach((f) => log.push(`${month}: superseded ${f.name} (${isoDate(f.start)} to ${isoDate(f.end)}, ${f.rows.length} rows)`));
+    });
+    return chosen;
+  }
+
+  function csvField(v) {
+    const s = String(v);
+    return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  }
+  const csvLine = (cells) => cells.map(csvField).join(',');
+  const minutes = (a, b) => (a - b) / 60000;
+
+  /** files: results of readRows / readWorkbook (any order; sorted by name like the Python version). */
+  function build(files, options) {
+    const useOverrides = !options || options.overrides !== false;
+    const log = [];
+    const sorted = files.slice().sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
+    const chosen = chooseFiles(sorted, log);
+    const months = Object.keys(chosen);
+    const rows = [];
+    months.forEach((m) => chosen[m].rows.forEach((r) => rows.push(r)));
+    const outside = [];
+    months.forEach((m) => {
+      const f = chosen[m], s = isoDate(f.start), e = isoDate(f.end);
+      f.rows.forEach((r) => { const d = isoDate(r.received); if (d < s || d > e) outside.push(r); });
+    });
+    if (outside.length) log.push(`WARNING: ${outside.length} rows fall outside their file period`);
+    const order = rows.map((r, i) => ({ r, i })).sort((a, b) => cmpTuple([a.r.received, a.r.station], [b.r.received, b.r.station]) || a.i - b.i);
+    const seen = new Set();
+    const kept = [];
+    let dropped = 0;
+    order.forEach(({ r }) => {
+      if (r.case_no) {
+        if (seen.has(r.case_no)) { dropped++; return; }
+        seen.add(r.case_no);
+      }
+      kept.push(r);
+    });
+    log.push(`duplicate case numbers dropped: ${dropped}`);
+    const seq = {};
+    const counts = {};
+    const records = kept.map((r) => {
+      const m = monthOf(r.received);
+      seq[m] = (seq[m] || 0) + 1;
+      const receivedIso = iso(r.received);
+      const rule = classify(r.note);
+      const outcome = (useOverrides && rules().overrides[receivedIso]) || rule;
+      counts[outcome] = (counts[outcome] || 0) + 1;
+      const d = new Date(r.received);
+      return {
+        id: `${m}-${pad(seq[m], 3)}`, month: m, received: receivedIso, date: receivedIso.slice(0, 10),
+        day: String(d.getUTCDate()), weekday: TH_WEEKDAY[(d.getUTCDay() + 6) % 7], hour: String(d.getUTCHours()),
+        type: r.type, station: r.station, unit: r.unit,
+        dispatch_min: minutes(r.dispatched, r.received).toFixed(2),
+        travel_min: minutes(r.arrived, r.dispatched).toFixed(2),
+        arrival_min: minutes(r.arrived, r.received).toFixed(2),
+        outcome, outcome_rule: rule, note: r.note, case_no: r.case_no, file: r.file
+      };
+    });
+    const coverage = months.map((m) => {
+      const f = chosen[m];
+      return { month: m, start: isoDate(f.start), end: isoDate(f.end), days: String(days(f) + 1) };
+    });
+    const incidentsCsv = [csvLine(CSV_COLUMNS), ...records.map((x) => csvLine(CSV_COLUMNS.map((c) => x[c])))].join('\r\n') + '\r\n';
+    const coverageCsv = [csvLine(['month', 'start', 'end', 'days']), ...coverage.map((c) => csvLine([c.month, c.start, c.end, c.days]))].join('\n') + '\n';
+    log.push(`incidents written: ${records.length}`);
+    const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    log.push('outcomes: ' + ranked.map(([k, v]) => `${k} ${v}`).join(', '));
+    log.push('rows to review (ไม่ระบุผล): ' + (counts[UN] || 0));
+    return { records, coverage, incidentsCsv, coverageCsv, log, counts, chosen };
+  }
+
+  root.PoliceData = {
+    OUTCOMES, CSV_COLUMNS,
+    get RULE_VERSION() { return rules().version; },
+    get OVERRIDES() { return rules().overrides; },
+    reload() { R = null; },
+    clean, parseWhen, classify, normaliseUnit, readRows, readWorkbook, chooseFiles, build, iso
+  };
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+
+<!-- Generated from webapp/importcore.js by webapp/tools/build-src.mjs. Do not edit here. -->
+<script type="text/p191-deferred">
+/* Review and publish logic of the import page (SPEC.md 9.1, decisions D4 and D6). No DOM, no network:
+ * the page (Import.html) draws it, tools/gas-harness.mjs tests it. Exposes globalThis.ImportCore.
+ *
+ *   start(build, file, monthStatus)    one workbook's pipeline result -> review state
+ *   decide(state, id, group)           reviewer sets the final group of one incident
+ *   bulkAccept(state)                  accept the rule's group for every undecided incident (only after all ไม่ระบุผล are decided)
+ *   progress(state), canPublish(state), visible(state, filter)
+ *   payload(state, options)            what publishMonth receives: de-identified rows only, never the close-out note
+ */
+(function (root) {
+  'use strict';
+
+  const UN = 'ไม่ระบุผล';
+  const GROUPS = ['ไม่พบผู้ก่อเหตุ', 'ระงับเหตุที่เกิดเหตุ', 'นำตัวหรือนำส่ง', 'ไม่ใช่เหตุตามแจ้ง', UN];
+  const ROW_COLUMNS = ['id', 'month', 'received', 'date', 'day', 'weekday', 'hour', 'type', 'station', 'unit',
+    'dispatch_min', 'travel_min', 'arrival_min'];
+
+  const isTimeIssue = (r) => Number(r.travel_min) <= 0 || Number(r.dispatch_min) < 0 || Number(r.dispatch_min) > 60;
+
+  /**
+   * build: PoliceData.build([file]) for exactly one workbook; file: its readWorkbook result plus {sha256};
+   * monthStatus: getMonthStatus(month) from the server (or null when unknown).
+   */
+  function start(build, file, monthStatus) {
+    if (build.coverage.length !== 1) throw new Error('ไฟล์ต้องมีข้อมูลเดือนเดียว');
+    const period = build.coverage[0];
+    const types = [...new Set(build.records.map((r) => r.type))].sort();
+    const known = (monthStatus && monthStatus.knownTypes) || [];
+    const storedDays = monthStatus && monthStatus.stored ? Number(monthStatus.coverage.days) : null;
+    const items = build.records.map((r) => ({
+      id: r.id,
+      rec: r,
+      rule: r.outcome_rule,
+      final: r.outcome === UN ? '' : r.outcome,  // ไม่ระบุผล must be chosen one by one
+      fromOverride: r.outcome !== r.outcome_rule,
+      decided: false
+    }));
+    return {
+      month: period.month,
+      period: { start: period.start, end: period.end, days: period.days },
+      fileName: file.name,
+      fileSha256: file.sha256 || '',
+      rowsRead: file.rows.length,
+      duplicatesDropped: file.rows.length - build.records.length,
+      timeIssues: build.records.filter(isTimeIssue).length,
+      typesPresent: types,
+      missingTypes: known.filter((t) => !types.includes(t)),
+      newTypes: known.length ? types.filter((t) => !known.includes(t)) : [],
+      stored: !!(monthStatus && monthStatus.stored),
+      storedRows: monthStatus && monthStatus.stored ? monthStatus.rows : 0,
+      storedDays,
+      shorter: storedDays != null && Number(period.days) < storedDays,
+      ruleVersion: (monthStatus && monthStatus.ruleVersion) || '',
+      items
+    };
+  }
+
+  function find(state, id) {
+    const it = state.items.find((x) => x.id === id);
+    if (!it) throw new Error(`ไม่พบเหตุ ${id}`);
+    return it;
+  }
+
+  function decide(state, id, group) {
+    if (!GROUPS.includes(group)) throw new Error(`กลุ่มไม่ถูกต้อง: ${group}`);
+    const it = find(state, id);
+    it.final = group;
+    it.decided = true;
+    return it;
+  }
+
+  const unknownPending = (state) => state.items.filter((x) => x.rule === UN && !x.decided && !x.fromOverride).length;
+
+  function canBulkAccept(state) {
+    return unknownPending(state) === 0 && state.items.some((x) => !x.decided);
+  }
+
+  function bulkAccept(state) {
+    if (unknownPending(state) > 0) throw new Error('ต้องตัดสินรายการที่ไม่ระบุผลทีละรายการก่อน');
+    let n = 0;
+    state.items.forEach((x) => {
+      if (!x.decided && x.final !== '') { x.decided = true; n++; }
+    });
+    return n;
+  }
+
+  function progress(state) {
+    const decided = state.items.filter((x) => x.decided).length;
+    return {
+      decided, total: state.items.length, unknownPending: unknownPending(state),
+      changed: state.items.filter((x) => x.decided && x.final !== x.rule).length
+    };
+  }
+
+  function canPublish(state, confirmShorter) {
+    if (state.shorter && !confirmShorter) return false;
+    return state.items.length > 0 && state.items.every((x) => x.decided && GROUPS.includes(x.final));
+  }
+
+  /** filter: 'all' | 'pending' | 'unknown' | 'changed'. Order: rule ไม่ระบุผล first, then received time. */
+  function visible(state, filter) {
+    const keep = {
+      all: () => true,
+      pending: (x) => !x.decided,
+      unknown: (x) => x.rule === UN,
+      changed: (x) => x.decided && x.final !== x.rule
+    }[filter || 'all'];
+    return state.items.filter(keep).slice().sort((a, b) => {
+      const ua = a.rule === UN ? 0 : 1, ub = b.rule === UN ? 0 : 1;
+      if (ua !== ub) return ua - ub;
+      return a.rec.received < b.rec.received ? -1 : a.rec.received > b.rec.received ? 1 : 0;
+    });
+  }
+
+  function payload(state, options) {
+    const opts = options || {};
+    if (!canPublish(state, opts.confirmShorter)) throw new Error('ยังทวนไม่ครบ');
+    const rows = state.items.map((x) => {
+      const o = {};
+      ROW_COLUMNS.forEach((c) => { o[c] = x.rec[c]; });
+      o.outcome = x.final;
+      o.outcome_rule = x.rule;
+      o.reviewed = 'TRUE';
+      return o;
+    });
+    return {
+      month: state.month,
+      period: { start: state.period.start, end: state.period.end, days: String(state.period.days) },
+      rows,
+      report: {
+        fileName: state.fileName, fileSha256: state.fileSha256, rowsRead: state.rowsRead, rowsKept: rows.length,
+        duplicatesDropped: state.duplicatesDropped, timeIssues: state.timeIssues, typesPresent: state.typesPresent.join(', '),
+        rowsChangedInReview: progress(state).changed
+      },
+      confirmShorter: !!opts.confirmShorter,
+      ruleVersion: opts.ruleVersion || state.ruleVersion || ''
+    };
+  }
+
+  root.ImportCore = { GROUPS, UN, start, decide, canBulkAccept, bulkAccept, progress, canPublish, visible, payload };
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+
+<!-- Generated from webapp/summarycore.js by webapp/tools/build-src.mjs. Do not edit here. -->
+<script type="text/p191-deferred">
+/* Police 191 monthly summary (สรุปการรับแจ้งเหตุ 191 เดือน ...), 7 Nov 2026.
+ * The 191 centre's signed report: one table of call type x station (25 stations, ไม่ระบุพื้นที่, รวม), all calls
+ * of the month including calls that are not incidents. Counts only; no time, outcome or personal data.
+ *
+ * Two layers, like pipeline.js:
+ *   readSummaryWorkbook(buffer, name)   SheetJS (.xls or .xlsx) -> rows of text -> readSummaryRows()
+ *   readSummaryRows(rows, name)         -> {month, start, end, days, calls, types, stations, checks, errors, warnings}
+ *   kindOf(rows)                        'summary' | 'detail' | 'unknown', for the import page
+ *   crossCheck(summary, records)        compares the summary with incidents.csv rows of the same month
+ *   toPayload(summary, report)          what the import page sends to publishSummary (src/Publish.gs)
+ *   fromSheetRows(rows, calls)          summaries rebuilt from the Sheet tabs summary_monthly and calls_monthly
+ * The signature block under the table (officer names) is never read past the รวม row.
+ * No imports; exposes globalThis.PoliceSummary so the same file runs in the browser and in Node (vm).
+ */
+(function (root) {
+  'use strict';
+
+  const VERSION = '2026-11-07';
+  const TH_MONTH_FULL = { 'มกราคม': 1, 'กุมภาพันธ์': 2, 'มีนาคม': 3, 'เมษายน': 4, 'พฤษภาคม': 5, 'มิถุนายน': 6,
+    'กรกฎาคม': 7, 'สิงหาคม': 8, 'กันยายน': 9, 'ตุลาคม': 10, 'พฤศจิกายน': 11, 'ธันวาคม': 12 };
+
+  // Column headings of the report -> station names as incidents.csv writes them (25 stations, D2 of raw/56).
+  const STATIONS = {
+    'เมือง': 'สภ.เมืองเชียงราย', 'มจ.': 'สภ.แม่จัน', 'มส.': 'สภ.แม่สาย', 'ชส.': 'สภ.เชียงแสน', 'ชข.': 'สภ.เชียงของ',
+    'เทิง': 'สภ.เทิง', 'วปป.': 'สภ.เวียงป่าเป้า', 'มสร.': 'สภ.แม่สรวย', 'พาน': 'สภ.พาน', 'ปด.': 'สภ.ป่าแดด',
+    'วช.': 'สภ.เวียงชัย', 'พญา': 'สภ.พญาเม็งราย', 'วก.': 'สภ.เวียงแก่น', 'มฟล.': 'สภ.แม่ฟ้าหลวง', 'ขต.': 'สภ.ขุนตาล',
+    'มล.': 'สภ.แม่ลาว', 'วชร.': 'สภ.เวียงเชียงรุ้ง', 'ดล.': 'สภ.ดอยหลวง', 'กช.': 'สภ.เกาะช้าง', 'มจด.': 'สภ.แม่เจดีย์',
+    'บร.': 'สภ.บุญเรือง', 'มย.': 'สภ.แม่ยาว', 'บด.': 'สภ.บ้านดู่', 'บซ.': 'สภ.บ้านแซว', 'มอ.': 'สภ.แม่อ้อ'
+  };
+  const UNASSIGNED = 'ไม่ระบุพื้นที่', TOTAL = 'รวม', HEADER = 'ชนิดของเหตุ';
+
+  // Type names in the summary that incidents.csv spells differently.
+  const ALIASES = { 'ขับขี่รถ จยย.รบกวนหรือเสียงดัง': 'ขับขี่รถจักรยานยนต์รบกวนหรือเสียงดัง' };
+
+  // Call groups. Silent, prank and wrong-number calls are named; any other row with no station counts is a
+  // service call (งานบริการ); a row with station counts is an incident (เหตุ).
+  const SILENT = 'โทรเข้ามาแล้วไม่พูด', PRANK = 'โทรก่อกวน', WRONG = 'โทรมาผิด';
+  const GROUPS = { incident: 'เหตุที่ระบุพื้นที่', service: 'งานบริการและสอบถาม', silent: 'โทรแล้วไม่พูด', wrong: 'โทรผิด', prank: 'โทรก่อกวน' };
+  const KNOWN_SERVICE = ['งานบริการทั่วไปและอื่น ๆ', 'สอบถามหมายเลขโทรศัพท์', 'ปรึกษาข้อกฎหมาย', 'ปรึกษาปัญหาชีวิต ครอบครัว',
+    'แจ้งปัญหาการจราจร', 'สอบถามเส้นทางที่ตั้งสถานที่', 'แจ้งปัญหาเกี่ยวกับโทรศัพท์'];
+
+  // Incident categories, DRAFT of 7 Nov 2026 for ภ.จว.เชียงราย to confirm (summary-categories-draft.md).
+  // `review` = placements the draft is least sure of. A type in no category is reported as a warning.
+  // The category grouping (a draft) is private (rules.js, 7 Nov 2026): it comes from window.P191_RULES.categories
+  // (the Sheet tab categories through the API on GitHub Pages). Without it every type reads "no category".
+  let CATS = null;
+  function cats() {
+    if (CATS) return CATS;
+    const src = (root.P191_RULES && root.P191_RULES.categories) || [];
+    CATS = { list: src, review: (root.P191_RULES && root.P191_RULES.review) || [], of: Object.fromEntries(src.flatMap((c) => c.types.map((t) => [t, c.key]))) };
+    return CATS;
+  }
+
+  const thaiDigits = (s) => String(s).replace(/[๐-๙]/g, (d) => String(d.charCodeAt(0) - 0x0E50));
+  const clean = (s) => thaiDigits(String(s == null ? '' : s)).replace(/ /g, ' ').replace(/\s+/g, ' ').trim();
+  const num = (s) => { const t = clean(s).replace(/,/g, ''); return t === '' ? 0 : Number(t); };
+  const pad = (n) => String(n).padStart(2, '0');
+
+  function parsePeriod(title) {
+    const t = clean(title);
+    const m = t.match(/(\d{1,2})\s*-\s*(\d{1,2})\s*([ก-๙]+)\s*(\d{4})/u);
+    if (!m || !TH_MONTH_FULL[m[3]]) return null;
+    const y = Number(m[4]) - 543, mo = TH_MONTH_FULL[m[3]], d1 = Number(m[1]), d2 = Number(m[2]);
+    const last = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+    if (d1 < 1 || d2 > last || d1 > d2) return null;
+    return { month: `${y}-${pad(mo)}`, start: `${y}-${pad(mo)}-${pad(d1)}`, end: `${y}-${pad(mo)}-${pad(d2)}`, days: d2 - d1 + 1, full: d1 === 1 && d2 === last };
+  }
+
+  // The หมายเหตุ line states the call totals in words; read them to check the table against the report itself.
+  function parseNote(text) {
+    const t = clean(text).replace(/,/g, '');
+    const get = (re) => { const m = t.match(re); return m ? Number(m[1]) : null; };
+    return { prank: get(/โทรเล่น\s*(\d+)/u), silent: get(/ไม่พูด\s*(\d+)/u), real: get(/โทรจริง\s*(\d+)/u), wrong: get(/โทรมาผิด\s*(\d+)/u) };
+  }
+
+  function readSummaryRows(rows, name) {
+    const errors = [], warnings = [], checks = [];
+    const out = { name, version: VERSION, month: null, start: null, end: null, days: null, full: false,
+      calls: null, types: [], stations: [], unassigned: 0, total: 0, checks, errors, warnings };
+    const period = parsePeriod((rows[0] || []).join(' '));
+    if (!period) errors.push('อ่านช่วงวันที่จากหัวรายงานไม่ได้ (แถว 1)');
+    else Object.assign(out, period);
+
+    let cols = null, totalRow = null, note = null;
+    const seen = new Set();
+    for (let r = 1; r < rows.length; r++) {
+      const row = rows[r] || [], label = clean(row[0]);
+      if (label === HEADER) {
+        // The heading row repeats where the printout breaks the page; the columns must stay the same.
+        const map = {};
+        row.forEach((h, c) => { const k = clean(h); if (c > 0 && k) map[c] = k; });
+        if (!cols) {
+          cols = map;
+          for (const k of Object.values(map)) if (k !== UNASSIGNED && k !== TOTAL && !STATIONS[k]) errors.push(`ไม่รู้จักคอลัมน์ "${k}"`);
+          if (!Object.values(map).includes(TOTAL)) errors.push('ไม่พบคอลัมน์ รวม');
+        } else if (JSON.stringify(map) !== JSON.stringify(cols)) errors.push(`หัวตารางซ้ำที่แถว ${r + 1} ไม่ตรงกับหัวตารางแรก`);
+        continue;
+      }
+      if (!cols || !label) continue;
+      if (label === TOTAL) { totalRow = row; continue; }
+      if (totalRow) { if (label.startsWith('หมายเหตุ')) note = parseNote(label); break; } // nothing after the note is read
+      const by = {}; let unassigned = 0, stated = null, sum = 0;
+      for (const [c, k] of Object.entries(cols)) {
+        const v = num(row[c]);
+        if (!Number.isFinite(v) || v < 0 || !Number.isInteger(v)) { errors.push(`ค่าไม่ใช่จำนวนนับ แถว ${r + 1} คอลัมน์ ${k}`); continue; }
+        if (k === TOTAL) stated = v;
+        else if (k === UNASSIGNED) { unassigned = v; sum += v; }
+        else if (v) { by[STATIONS[k]] = v; sum += v; }
+      }
+      const type = ALIASES[label] || label;
+      if (seen.has(type)) errors.push(`ประเภท "${type}" ซ้ำ (แถว ${r + 1})`);
+      seen.add(type);
+      if (stated !== sum) errors.push(`แถว ${r + 1} "${label}": ผลรวมรายพื้นที่ ${sum} ไม่เท่ากับช่องรวม ${stated}`);
+      const inArea = sum - unassigned;
+      const group = label === SILENT ? 'silent' : label === PRANK ? 'prank' : label === WRONG ? 'wrong' : inArea ? 'incident' : 'service';
+      if (group === 'service' && !KNOWN_SERVICE.includes(label)) warnings.push(`"${label}" ไม่มีพื้นที่ จัดเป็นงานบริการ ควรตรวจ`);
+      if (group === 'incident' && unassigned) warnings.push(`"${label}" มี ${unassigned} ครั้งไม่ระบุพื้นที่`);
+      const category = group === 'incident' ? (cats().of[type] || null) : null;
+      if (group === 'incident' && !category) warnings.push(`"${type}" ยังไม่อยู่ในหมวดใด จัดไว้ใน ยังไม่จัดหมวด`);
+      out.types.push({ type, label, group, category, total: stated, inArea, unassigned, by });
+    }
+    if (!cols) errors.push('ไม่พบหัวตาราง ชนิดของเหตุ');
+    if (!totalRow) errors.push('ไม่พบแถว รวม');
+    if (errors.length) return out;
+
+    // Column totals of the รวม row against the sum of the type rows.
+    const stationTotals = {};
+    for (const [c, k] of Object.entries(cols)) {
+      const v = num(totalRow[c]);
+      const sum = out.types.reduce((a, t) => a + (k === TOTAL ? t.total : k === UNASSIGNED ? t.unassigned : (t.by[STATIONS[k]] || 0)), 0);
+      if (v !== sum) errors.push(`แถวรวม คอลัมน์ ${k}: ${v} ไม่เท่ากับผลรวม ${sum}`);
+      if (k === TOTAL) out.total = v; else if (k === UNASSIGNED) out.unassigned = v; else stationTotals[STATIONS[k]] = v;
+    }
+    checks.push({ what: 'ผลรวมแต่ละแถวและแถวรวม', ok: !errors.length });
+    out.stations = Object.entries(stationTotals).map(([station, total]) => ({ station, total })).sort((a, b) => b.total - a.total || a.station.localeCompare(b.station, 'th'));
+
+    const g = (k) => out.types.filter((t) => t.group === k).reduce((a, t) => a + t.total, 0);
+    out.calls = { total: out.total, incident: g('incident'), service: g('service'), silent: g('silent'), wrong: g('wrong'), prank: g('prank') };
+    out.calls.real = out.calls.incident + out.calls.service;
+    if (note) {
+      for (const k of ['silent', 'prank', 'wrong', 'real']) {
+        if (note[k] == null) { warnings.push(`หมายเหตุไม่ระบุยอด ${GROUPS[k] || 'โทรจริง'}`); continue; }
+        const ok = note[k] === out.calls[k], n = (v) => v.toLocaleString('en-US');
+        checks.push({ what: `หมายเหตุ ${k === 'real' ? 'โทรจริง' : GROUPS[k]} ${n(note[k])}`, ok });
+        if (!ok) warnings.push(`หมายเหตุระบุ ${k === 'real' ? 'โทรจริง' : GROUPS[k]} ${n(note[k])} แต่ตารางได้ ${n(out.calls[k])}`);
+      }
+    } else warnings.push('ไม่พบบรรทัดหมายเหตุใต้ตาราง');
+    if (period && !period.full) warnings.push('รายงานไม่ครบเดือน');
+    out.types.sort((a, b) => b.total - a.total || a.type.localeCompare(b.type, 'th'));
+    return out;
+  }
+
+  function readSummaryWorkbook(buffer, name) {
+    const X = root.XLSX;
+    if (!X) throw new Error('SheetJS (XLSX) is not loaded');
+    const wb = X.read(buffer, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const rows = X.utils.sheet_to_json(ws, { header: 1, raw: false, defval: '', blankrows: true });
+    return readSummaryRows(rows, name);
+  }
+
+  // Which 191 export is this? The summary has the heading ชนิดของเหตุ; the per-incident export has หมายเลขเหตุ:.
+  function kindOf(rows) {
+    const head = (rows || []).slice(0, 40).map((r) => (r || []).map((c) => clean(c)));
+    if (head.some((r) => r[0] === HEADER)) return 'summary';
+    if (head.slice(0, 3).some((r) => r.some((c) => c.startsWith('หมายเลขเหตุ')))) return 'detail';
+    return 'unknown';
+  }
+
+  // Incidents per category (most first), with station counts and member types; unmapped types go to ยังไม่จัดหมวด.
+  function byCategory(summary) {
+    const catRows = cats().list.map((c) => ({ key: c.key, name: c.name, short: c.short, total: 0, by: {}, types: [] }));
+    const other = { key: 'none', name: 'ยังไม่จัดหมวด', short: 'อื่น ๆ', total: 0, by: {}, types: [] };
+    for (const t of summary.types.filter((x) => x.group === 'incident')) {
+      const c = catRows.find((x) => x.key === t.category) || other;
+      c.total += t.total; c.types.push(t);
+      for (const [st, n] of Object.entries(t.by)) c.by[st] = (c.by[st] || 0) + n;
+    }
+    return [...catRows, other].filter((c) => c.total).sort((a, b) => b.total - a.total);
+  }
+
+  // Per type tracked in incidents.csv for the month: rows there against the summary count, also per station.
+  function crossCheck(summary, records) {
+    const mine = records.filter((r) => r.month === summary.month);
+    const byType = {};
+    for (const r of mine) {
+      const t = byType[r.type] || (byType[r.type] = { n: 0, by: {} });
+      t.n++; t.by[r.station] = (t.by[r.station] || 0) + 1;
+    }
+    const sumByType = Object.fromEntries(summary.types.map((t) => [t.type, t]));
+    return Object.entries(byType).map(([type, d]) => {
+      const s = sumByType[type];
+      const stations = s ? [...new Set([...Object.keys(d.by), ...Object.keys(s.by)])]
+        .filter((st) => (d.by[st] || 0) !== (s.by[st] || 0))
+        .map((st) => ({ station: st, detail: d.by[st] || 0, summary: s.by[st] || 0 })) : [];
+      return { type, detail: d.n, summary: s ? s.total : null, ok: !!s && s.total === d.n && !stations.length, stations };
+    }).sort((a, b) => b.detail - a.detail);
+  }
+
+  // What the import page sends to publishSummary (src/Publish.gs): one row per type and station with a count, all
+  // values text, plus the call totals. ไม่ระบุพื้นที่ is a station value of its own.
+  const CALL_KEYS = ['total', 'incident', 'service', 'silent', 'wrong', 'prank'];
+  function toPayload(summary, report) {
+    const rows = [];
+    for (const t of summary.types) {
+      for (const [station, n] of Object.entries(t.by)) rows.push({ type: t.type, group: t.group, station, count: String(n) });
+      if (t.unassigned) rows.push({ type: t.type, group: t.group, station: UNASSIGNED, count: String(t.unassigned) });
+    }
+    const calls = {};
+    CALL_KEYS.forEach((k) => { calls[k] = String(summary.calls[k]); });
+    return { month: summary.month, period: { start: summary.start, end: summary.end, days: String(summary.days) }, rows, calls,
+      report: { fileName: report.fileName, fileSha256: report.fileSha256 }, version: VERSION };
+  }
+
+  // The reverse: summaries rebuilt from the Sheet tabs (getSummary), one per month in calls_monthly, oldest first.
+  // Same shape as readSummaryRows gives, so the pages draw both alike.
+  function fromSheetRows(summaryRows, callsRows) {
+    const stationNames = Object.values(STATIONS);
+    return (callsRows || []).slice().sort((a, b) => (a.month < b.month ? -1 : 1)).map((c) => {
+      const types = {}, stationTotals = Object.fromEntries(stationNames.map((s) => [s, 0]));
+      for (const r of (summaryRows || []).filter((x) => x.month === c.month)) {
+        const n = Number(r.count);
+        const t = types[r.type] || (types[r.type] = { type: r.type, label: r.type, group: r.group, total: 0, inArea: 0, unassigned: 0, by: {} });
+        t.total += n;
+        if (r.station === UNASSIGNED) t.unassigned += n;
+        else { t.by[r.station] = (t.by[r.station] || 0) + n; t.inArea += n; stationTotals[r.station] = (stationTotals[r.station] || 0) + n; }
+      }
+      const list = Object.values(types).map((t) => Object.assign(t, { category: t.group === 'incident' ? (cats().of[t.type] || null) : null }))
+        .sort((a, b) => b.total - a.total || a.type.localeCompare(b.type, 'th'));
+      const calls = {};
+      CALL_KEYS.forEach((k) => { calls[k] = Number(c[k]); });
+      calls.real = calls.incident + calls.service;
+      const days = Math.round((Date.UTC(+c.end.slice(0, 4), +c.end.slice(5, 7) - 1, +c.end.slice(8, 10)) -
+        Date.UTC(+c.start.slice(0, 4), +c.start.slice(5, 7) - 1, +c.start.slice(8, 10))) / 86400000) + 1;
+      const last = new Date(Date.UTC(+c.month.slice(0, 4), +c.month.slice(5, 7), 0)).getUTCDate();
+      return {
+        name: c.file_name || '', version: VERSION, month: c.month, start: c.start, end: c.end, days,
+        full: c.start.slice(8) === '01' && Number(c.end.slice(8)) === last, calls, types: list,
+        stations: Object.entries(stationTotals).map(([station, total]) => ({ station, total }))
+          .sort((a, b) => b.total - a.total || a.station.localeCompare(b.station, 'th')),
+        unassigned: list.reduce((a, t) => a + t.unassigned, 0), total: calls.total, checks: [], errors: [], warnings: [],
+        uploadId: c.upload_id || '', uploadedAt: c.uploaded_at || ''
+      };
+    });
+  }
+
+  root.PoliceSummary = { VERSION, STATIONS, UNASSIGNED, ALIASES, GROUPS, CALL_KEYS, parsePeriod, parseNote, readSummaryRows,
+    readSummaryWorkbook, kindOf, byCategory, crossCheck, toPayload, fromSheetRows,
+    get CATEGORIES() { return cats().list; }, get REVIEW() { return cats().review; }, reload() { CATS = null; } };
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+
+<script type="text/p191-deferred">
+(function () {
+  'use strict';
+  const TH_M = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const monthLabel = (m) => `${TH_M[Number(m.slice(5, 7)) - 1]} ${Number(m.slice(0, 4)) + 543}`;
+  const dateLabel = (d) => `${Number(d.slice(8, 10))} ${TH_M[Number(d.slice(5, 7)) - 1]} ${Number(d.slice(0, 4)) + 543}`;
+  const whenLabel = (s) => `${Number(s.slice(8, 10))} ${TH_M[Number(s.slice(5, 7)) - 1]} ${s.slice(11, 16)}`;
+  let state = null, filter = 'all', published = false;
+  let summary = null, sPublished = false; // the monthly summary file, when that is what was chosen
+
+  function message(box, text, kind) {
+    const b = $(box); b.textContent = '';
+    if (text) b.appendChild(el('p', `notice ${kind || ''}`, text));
+  }
+  function reset() {
+    state = null; published = false; filter = 'all'; summary = null; sPublished = false;
+    ['step-report', 'step-review', 'step-publish', 'step-sreport', 'step-spublish'].forEach((id) => { $(id).hidden = true; });
+    message('publish-msg', ''); message('replace-msg', ''); message('spublish-msg', '');
+    $('confirm-shorter').checked = false;
+  }
+  function run(fn, ...args) {
+    return new Promise((resolve, reject) => {
+      google.script.run.withSuccessHandler(resolve).withFailureHandler((e) => reject(e && e.message ? e : new Error(String(e))))[fn](...args);
+    });
+  }
+  async function sha256(buf) {
+    const d = await crypto.subtle.digest('SHA-256', buf);
+    return Array.from(new Uint8Array(d)).map((b) => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function onFile(f) {
+    reset();
+    if (!f) return;
+    if (!/\.xlsx?$/i.test(f.name)) { message('file-msg', 'รองรับเฉพาะไฟล์ .xlsx หรือ .xls ที่ส่งออกจากระบบ 191', 'bad'); return; }
+    message('file-msg', `กำลังอ่าน ${f.name}`);
+    try {
+      if (!window.XLSX) throw new Error('โหลดตัวอ่าน Excel (SheetJS) ไม่สำเร็จ ตรวจการเชื่อมต่ออินเทอร์เน็ตแล้วเปิดหน้าใหม่');
+      const buf = await f.arrayBuffer();
+      const hash = await sha256(buf);
+      const wb = XLSX.read(new Uint8Array(buf), { type: 'array' });
+      const kind = PoliceSummary.kindOf(XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1, raw: false, defval: '', blankrows: true }));
+      if (kind === 'summary') { await onSummary(f, buf, hash); return; }
+      if (kind === 'unknown') throw new Error('ไม่ใช่ไฟล์รายเหตุหรือรายงานสรุปจากระบบ 191');
+      const file = PoliceData.readWorkbook(new Uint8Array(buf), f.name, f.lastModified / 1000);
+      file.sha256 = hash;
+      const build = PoliceData.build([file]);
+      const month = build.coverage[0].month;
+      message('file-msg', `อ่านแล้ว ${f.name} กำลังตรวจข้อมูลเดิมของเดือน ${monthLabel(month)}`);
+      const status = await run('getMonthStatus', month);
+      state = ImportCore.start(build, file, status);
+      message('file-msg', `อ่านแล้ว ${f.name}`, 'good');
+      drawReport(); drawReview();
+    } catch (e) {
+      reset();
+      message('file-msg', `อ่านไฟล์ไม่สำเร็จ: ${e.message}`, 'bad');
+    }
+  }
+
+  function drawReport() {
+    const tb = $('report'); tb.textContent = '';
+    const s = state;
+    const rows = [
+      ['เดือน', monthLabel(s.month)],
+      ['ช่วงวันที่ในไฟล์', `${dateLabel(s.period.start)} ถึง ${dateLabel(s.period.end)} (${s.period.days} วัน)`],
+      ['แถวที่อ่านได้', `${s.rowsRead} แถว`],
+      ['เหตุที่จะเก็บ', `${s.items.length} เหตุ${s.duplicatesDropped ? ` (ตัดหมายเลขเหตุซ้ำ ${s.duplicatesDropped})` : ''}`],
+      ['เวลาผิดปกติ', s.timeIssues ? `${s.timeIssues} เหตุ (เก็บไว้ และแสดงในข้อสังเกตคุณภาพข้อมูล)` : 'ไม่มี'],
+      ['ประเภทในไฟล์', s.typesPresent.join(', ')],
+      ['ประเภทที่ไม่มีในไฟล์', s.missingTypes.length ? `${s.missingTypes.join(', ')} (จะแสดงเป็น "ไม่มีข้อมูล" ของเดือนนี้)` : 'ไม่มี'],
+      ['ประเภทใหม่', s.newTypes.length ? s.newTypes.join(', ') : 'ไม่มี']
+    ];
+    rows.forEach(([k, v]) => { const tr = tb.insertRow(); tr.appendChild(el('th', null, k)); tr.appendChild(el('td', null, v)); });
+    if (!s.stored) message('replace-msg', `เดือน ${monthLabel(s.month)} ยังไม่มีในระบบ จะเพิ่มเป็นเดือนใหม่`);
+    else if (s.shorter) message('replace-msg', `ข้อมูลเดิมของเดือนนี้มี ${s.storedRows} เหตุ ครอบคลุม ${s.storedDays} วัน แต่ไฟล์ใหม่ครอบคลุม ${s.period.days} วัน ซึ่งน้อยกว่า ตรวจว่าเลือกไฟล์ถูกหรือไม่`, 'bad');
+    else message('replace-msg', `จะแทนข้อมูลเดิมของเดือนนี้ ${s.storedRows} เหตุ (${s.storedDays} วัน) ด้วยไฟล์นี้ เดือนอื่นไม่เปลี่ยน`);
+    $('shorter-box').hidden = !s.shorter;
+    $('step-report').hidden = false;
+  }
+
+  function drawReview() {
+    const s = state;
+    const p = ImportCore.progress(s);
+    $('prog-decided').textContent = p.decided;
+    $('prog-total').textContent = p.total;
+    $('prog-unknown').textContent = p.unknownPending ? `ไม่ระบุผลที่ยังต้องเลือก ${p.unknownPending} รายการ` : '';
+    $('prog-changed').textContent = p.changed ? `แก้จากกฎ ${p.changed} รายการ` : '';
+    $('bulk').disabled = !ImportCore.canBulkAccept(s);
+    document.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.filter === filter)));
+    const tb = $('rows'); tb.textContent = '';
+    const list = ImportCore.visible(s, filter);
+    if (!list.length) { const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = 7; td.className = 'muted'; td.textContent = 'ไม่มีรายการในตัวกรองนี้'; }
+    list.forEach((it) => {
+      const tr = tb.insertRow();
+      if (it.decided) tr.className = 'done';
+      const td = (cls, text, label) => { const c = el('td', cls, text); if (label) c.dataset.label = label; return c; };
+      tr.appendChild(td('when', whenLabel(it.rec.received), 'รับแจ้ง'));
+      tr.appendChild(td(null, it.rec.type, 'ประเภท'));
+      tr.appendChild(td(null, it.rec.station, 'สภ.'));
+      tr.appendChild(td('note', it.rec.note || '(ไม่มีข้อความ)', 'ปิดเหตุ'));
+      const rule = td(null, it.rule, 'กลุ่มตามกฎ');
+      if (it.fromOverride) { rule.appendChild(document.createElement('br')); rule.appendChild(el('span', 'tag over', 'มีการแก้ด้วยมือเดิม')); }
+      tr.appendChild(rule);
+      const sel = el('select');
+      sel.setAttribute('aria-label', `กลุ่มสุดท้ายของเหตุ ${whenLabel(it.rec.received)}`);
+      if (it.final === '') { const o = new Option('เลือกกลุ่ม', ''); o.disabled = true; sel.appendChild(o); sel.classList.add('need'); }
+      ImportCore.GROUPS.forEach((g) => sel.appendChild(new Option(g, g)));
+      sel.value = it.final;
+      sel.addEventListener('change', () => { ImportCore.decide(s, it.id, sel.value); drawReview(); });
+      const tdSel = td(null, null, 'กลุ่มสุดท้าย'); tdSel.appendChild(sel); tr.appendChild(tdSel);
+      tr.appendChild(el('td', null)).appendChild(el('span', it.decided ? 'tag ok' : (it.final === '' ? 'tag need' : 'tag'), it.decided ? 'ทวนแล้ว' : (it.final === '' ? 'ต้องเลือก' : 'ยังไม่ทวน')));
+    });
+    $('step-review').hidden = false;
+    $('step-publish').hidden = false;
+    $('publish').disabled = published || !ImportCore.canPublish(s, $('confirm-shorter').checked);
+  }
+
+  async function onPublish() {
+    if (!state || published) return;
+    const btn = $('publish');
+    btn.disabled = true;
+    message('publish-msg', 'กำลังเผยแพร่');
+    try {
+      const pl = ImportCore.payload(state, { confirmShorter: $('confirm-shorter').checked });
+      const res = await run('publishMonth', pl);
+      published = true;
+      message('publish-msg', `เผยแพร่แล้ว ${monthLabel(res.month)} ${res.rows} เหตุ${res.replaced ? ' (แทนข้อมูลเดิม)' : ''} ข้อมูลทั้งหมดในระบบ ${res.totals.incidents} เหตุ ${res.totals.months} เดือน${res.ok ? '' : ' แต่การตรวจ Sheet พบปัญหา กรุณาแจ้งผู้ดูแล'}`, res.ok ? 'good' : 'bad');
+    } catch (e) {
+      btn.disabled = false;
+      const m = String(e.message || e);
+      message('publish-msg', `เผยแพร่ไม่สำเร็จ: ${m.replace(/^[A-Z]+: /, '')}`, 'bad');
+    }
+  }
+
+  // ---------- monthly summary (สรุปการรับแจ้งเหตุ 191) ----------
+  async function onSummary(f, buf, hash) {
+    const s = PoliceSummary.readSummaryWorkbook(new Uint8Array(buf), f.name);
+    let status = null;
+    if (s.month) {
+      message('file-msg', `อ่านแล้ว ${f.name} กำลังตรวจข้อมูลเดิมของเดือน ${monthLabel(s.month)}`);
+      status = await run('getSummaryStatus', s.month);
+    }
+    summary = { s, status, file: { fileName: f.name, fileSha256: hash } };
+    message('file-msg', `อ่านแล้ว ${f.name} (รายงานสรุป)`, s.errors.length ? 'bad' : 'good');
+    drawSummary();
+  }
+
+  function drawSummary() {
+    const { s, status } = summary;
+    const ok = !s.errors.length && status && status.ready;
+    const n = (v) => v.toLocaleString('en-US');
+    const tb = $('sreport'); tb.textContent = '';
+    const kv = (k, v) => { const tr = tb.insertRow(); tr.appendChild(el('th', null, k)); const td = el('td'); (Array.isArray(v) ? v : [v]).forEach((x) => td.appendChild(typeof x === 'string' ? document.createTextNode(x) : x)); tr.appendChild(td); };
+    kv('ไฟล์', s.name);
+    if (s.month) {
+      kv('เดือน', monthLabel(s.month));
+      kv('ช่วงวันที่ในไฟล์', `${dateLabel(s.start)} ถึง ${dateLabel(s.end)} (${s.days} วัน${s.full ? ' ครบเดือน' : ' ไม่ครบเดือน'})`);
+    }
+    if (!s.errors.length) {
+      const c = s.calls, inc = s.types.filter((t) => t.group === 'incident'), unmapped = inc.filter((t) => !t.category);
+      kv('สายเข้าทั้งหมด', `${n(c.total)} สาย`);
+      kv('โทรจริง', `${n(c.real)} สาย (เหตุที่ระบุพื้นที่ ${n(c.incident)} + งานบริการ ${n(c.service)})`);
+      kv('โทรไม่พูด ผิด ก่อกวน', `${n(c.silent)} / ${n(c.wrong)} / ${n(c.prank)} สาย`);
+      kv('ประเภทเหตุ', `${inc.length} ประเภท ใน ${s.stations.length} สภ.`);
+      kv('ตรวจผลรวม', s.checks.map((x) => el('div', x.ok ? 'tag ok' : 'tag need', `${x.what} ${x.ok ? 'ตรง' : 'ไม่ตรง'}`)));
+      kv('หมวดเหตุ (ร่าง)', unmapped.length ? el('span', 'tag need', `ยังไม่จัดหมวด ${unmapped.length} ประเภท: ${unmapped.map((t) => t.type).join(', ')}`) : el('span', 'tag ok', 'ทุกประเภทอยู่ในหมวดแล้ว'));
+      if (status) kv('ข้อมูลเดิม', status.stored ? `มีรายงานสรุปเดือนนี้แล้ว (${status.stored.file_name}) จะถูกแทนด้วยไฟล์นี้` : 'ยังไม่มีรายงานสรุปเดือนนี้ จะเพิ่มเป็นเดือนใหม่');
+    }
+    const box = $('smsgs'); box.textContent = '';
+    s.errors.forEach((e) => box.appendChild(el('p', 'notice bad', e)));
+    s.warnings.forEach((w) => box.appendChild(el('p', 'notice', w)));
+    if (status && !status.ready) box.appendChild(el('p', 'notice bad', 'ยังไม่มีแท็บรายงานสรุปใน Sheet ให้ผู้ดูแลรัน setupSheet อีกครั้งก่อน'));
+    if (s.errors.length) box.appendChild(el('p', 'notice bad', 'แก้ไฟล์หรือขอไฟล์ใหม่จากศูนย์ 191 ก่อน จึงจะเผยแพร่ได้'));
+
+    // Against the per-incident rows already in the Sheet for the same month (the data keeper's check).
+    const chk = $('scheck'); chk.textContent = '';
+    if (!s.errors.length && status) {
+      const cc = PoliceSummary.crossCheck(s, status.incidents);
+      if (!cc.length) chk.appendChild(el('p', 'notice', 'ยังไม่มีข้อมูลรายเหตุของเดือนนี้ในระบบ จะตรวจเทียบได้เมื่อนำเข้าไฟล์รายเหตุของเดือนเดียวกัน'));
+      else {
+        const allOk = cc.every((x) => x.ok);
+        chk.appendChild(el('p', `notice ${allOk ? 'good' : 'bad'}`, `ตรวจเทียบกับข้อมูลรายเหตุในระบบ: ตรง ${cc.filter((x) => x.ok).length} จาก ${cc.length} ประเภท ทั้งรวมและราย สภ.${allOk ? '' : ' ยังเผยแพร่ได้ แต่ควรตรวจว่าไฟล์เป็นเดือนเดียวกันหรือไม่'}`));
+        const t = el('table'); const head = t.createTHead().insertRow();
+        ['ประเภท', 'รายเหตุ', 'รายงานสรุป', 'ผล'].forEach((x) => head.appendChild(el('th', null, x)));
+        const body = t.createTBody();
+        cc.forEach((x) => {
+          const tr = body.insertRow();
+          tr.appendChild(el('td', null, x.type)); tr.appendChild(el('td', null, String(x.detail)));
+          tr.appendChild(el('td', null, x.summary == null ? 'ไม่มี' : String(x.summary)));
+          tr.appendChild(el('td')).appendChild(el('span', x.ok ? 'tag ok' : 'tag need', x.ok ? 'ตรง' : (x.stations.length ? `ต่าง ${x.stations.length} สภ.` : 'ไม่ตรง')));
+        });
+        chk.appendChild(t);
+      }
+    }
+    $('step-sreport').hidden = false;
+    $('step-spublish').hidden = false;
+    $('spublish').disabled = sPublished || !ok;
+  }
+
+  async function onSPublish() {
+    if (!summary || sPublished) return;
+    const btn = $('spublish');
+    btn.disabled = true;
+    message('spublish-msg', 'กำลังเผยแพร่');
+    try {
+      const res = await run('publishSummary', PoliceSummary.toPayload(summary.s, summary.file));
+      sPublished = true;
+      message('spublish-msg', `เผยแพร่แล้ว รายงานสรุป ${monthLabel(res.month)} ${res.rows} แถว${res.replaced ? ' (แทนข้อมูลเดิม)' : ''}${res.ok ? '' : ' แต่การตรวจ Sheet พบปัญหา กรุณาแจ้งผู้ดูแล'}`, res.ok ? 'good' : 'bad');
+    } catch (e) {
+      btn.disabled = false;
+      message('spublish-msg', `เผยแพร่ไม่สำเร็จ: ${String(e.message || e).replace(/^[A-Z_]+: /, '')}`, 'bad');
+    }
+  }
+  $('spublish').addEventListener('click', onSPublish);
+
+  $('file').addEventListener('change', (e) => onFile(e.target.files[0]));
+  const drop = $('drop');
+  drop.addEventListener('dragover', (e) => { e.preventDefault(); drop.classList.add('over'); });
+  drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+  drop.addEventListener('drop', (e) => { e.preventDefault(); drop.classList.remove('over'); onFile(e.dataTransfer.files[0]); });
+  document.querySelectorAll('.chip').forEach((c) => c.addEventListener('click', () => { filter = c.dataset.filter; drawReview(); }));
+  $('bulk').addEventListener('click', () => { ImportCore.bulkAccept(state); drawReview(); });
+  $('confirm-shorter').addEventListener('change', () => { if (state) drawReview(); });
+  $('publish').addEventListener('click', onPublish);
+  window.addEventListener('beforeunload', (e) => { if ((state && !published) || (summary && !sPublished && !summary.s.errors.length)) { e.preventDefault(); e.returnValue = ''; } });
+})();
+</script>
+</body>
+</html>

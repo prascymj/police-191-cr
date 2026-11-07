@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th" data-p191="status">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สถานะระบบ เหตุ 191 จ.เชียงราย</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เหตุ 191 จ.เชียงราย</title>
+<script src="config.js"></script>
+<script src="shim.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Phone-first, same look as the phone page (design v2): ADT navy and sky, 16 px cards, pill controls. */
+  :root{--navy:#061C90;--sky:#1CA4E1;--fg:#121317;--fg2:#3C4150;--muted:#585C66;--faint:#9AA0AD;--line:#ECEEF4;
+  --tint:#E8ECFA;--tint2:#F3F5FD;--tintLine:#D4DBF5;--chip:#F1F3F8;--bad:#A01B2E;--badBg:#FCEDEF;--ok:#176B3A;--okBg:#E6F4EC;
+  --shadow:0 1px 2px rgba(16,24,64,.04),0 8px 24px rgba(16,24,64,.06)}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F3F5F9;color:var(--fg);font-family:"IBM Plex Sans Thai",Sarabun,"Noto Sans Thai",Tahoma,sans-serif;font-size:15px;line-height:1.45}
+  /* Opened from the full dashboard (?from=dashboard): the dashboard's font, and หน้าหลัก goes back to it (7 Nov 2026). */
+  body.from-dash{font-family:Sarabun,"TH Sarabun New","Noto Sans Thai",Tahoma,sans-serif}
+  /* ...and the dashboard's look (dashboard-spec/DESIGN.md tokens): grey page, white panels with a 1px line and 4px corners,
+     no shadows, title with the navy rule, small framed controls, text links top right (7 Nov 2026). */
+  body.from-dash{background:#f6f7f9;--line:#e9ebf0;--line2:#d6d9e0}
+  .from-dash main{max-width:1280px;padding:0 16px 40px;background:transparent}
+  .from-dash .m-top{padding:8px 0 0;justify-content:flex-end;gap:16px;font-size:13px}
+  .from-dash .m-brand{display:none}
+  .from-dash .m-back{min-height:0;padding:0;border-radius:0;background:none;font-size:13px;font-weight:400;text-decoration:underline;color:#061c90}
+  .from-dash .m-title{padding:4px 0 12px;margin-bottom:12px;border-bottom:2px solid #061c90}
+  .from-dash h1{font-size:18px;line-height:1.35}
+  .from-dash .m-title .muted{color:#061c90;font-weight:600;letter-spacing:.02em;margin-top:2px}
+  .from-dash .card{border:1px solid #d6d9e0;border-radius:4px;box-shadow:none;padding:16px;margin-top:12px}
+  .from-dash h2{font-size:15px;font-weight:500}
+  .from-dash .notice{border-radius:4px}
+  .from-dash main{max-width:720px}
+  .from-dash .state{border-radius:4px}
+  .from-dash .more a{min-height:48px;border:1px solid #d6d9e0;border-radius:4px;background:#FFFFFF;font-size:15px;font-weight:500}
+  .from-dash .more a.main{background:#061c90;border-color:#061c90}
+  a{color:var(--navy)}
+  a:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  main{max-width:480px;margin:0 auto;padding:0 20px 40px;background:#FFFFFF;min-height:100vh}
+  .m-top{padding:20px 0 0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .m-brand{font-size:20px;font-weight:700;color:var(--navy);text-decoration:none}
+  .m-brand span{font-size:15px;font-weight:500;color:var(--muted)}
+  .m-back{min-height:40px;padding:0 16px;border-radius:999px;background:var(--tint);color:var(--navy);font-size:14px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center}
+  .m-title{padding:16px 0 4px}
+  h1{font-size:22px;margin:0;font-weight:600}
+  .muted{color:var(--muted);font-size:13px;margin:0}
+  .card{background:#FFFFFF;border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:14px;box-shadow:var(--shadow)}
+  h2{font-size:16px;margin:0 0 8px;font-weight:600}
+  dl{margin:0}
+  dl div{padding:8px 0;border-bottom:1px solid var(--line)}
+  dl div:last-child{border-bottom:0}
+  dt{font-size:12px;color:var(--muted)}
+  dd{margin:0;font-size:15px;font-weight:500;overflow-wrap:anywhere}
+  .state{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;margin:0 0 6px}
+  .state.ok{background:var(--okBg);color:var(--ok)}
+  .state.bad{background:var(--badBg);color:var(--bad)}
+  .state i{width:10px;height:10px;border-radius:999px;background:currentColor;flex:none}
+  .months{list-style:none;margin:0;padding:0}
+  .months li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  .months li:last-child{border-bottom:0}
+  .months .mo{flex:1;font-weight:500}
+  .months .d{font-size:12px;color:var(--muted)}
+  .months .n{font-size:16px;font-weight:700;min-width:3ch;text-align:right}
+  .months li.total{border-top:2px solid var(--line);border-bottom:0;margin-top:2px}
+  .notice{margin:14px 0 0;padding:10px 14px;border-radius:12px;background:var(--badBg);border:1px solid #F2C6CD;color:var(--bad);font-size:14px;font-weight:500}
+  .more{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+  .more a{display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:6px 14px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--fg);font-size:15px;font-weight:600}
+  .more a span{font-size:12px;font-weight:400;color:var(--muted)}
+  .more a.main{background:var(--navy);border-color:var(--navy);color:#FFFFFF}
+  .more a.main span{color:#CDEBFA}
+</style>
+<style>
+  .more button{font:inherit;display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:6px 14px;border:1px solid var(--line);border-radius:14px;background:#FFFFFF;color:var(--bad);font-size:15px;font-weight:600;cursor:pointer;text-align:left}
+  .from-dash .more button{min-height:48px;border-color:#d6d9e0;border-radius:4px}
+  .more button span{font-size:12px;font-weight:400;color:var(--muted)}
+</style>
+</head>
+<body>
+<!-- The status page of the GitHub Pages site (7 Nov 2026): same content as src/Status.html, drawn from the API's
+     "status" action instead of server-side template code. -->
+<main>
+  <header class="m-top">
+    <a class="m-brand" href="__P191_HOME__">เหตุ 191 <span>จ.เชียงราย</span></a>
+    <a class="m-back" href="__P191_HOME__">หน้าหลัก</a>
+  </header>
+  <div class="m-title">
+    <h1>สถานะระบบ</h1>
+    <p class="muted">ตำรวจภูธรจังหวัดเชียงราย</p>
+  </div>
+  <section class="card">
+    <h2>บัญชีที่ใช้อยู่</h2>
+    <dl>
+      <div><dt>บัญชี</dt><dd id="st-email"></dd></div>
+      <div><dt>สิทธิ์</dt><dd id="st-role"></dd></div>
+      <div><dt>รุ่นของหน้า</dt><dd>M5 (GitHub Pages, เข้าระบบด้วยบัญชี Google)</dd></div>
+    </dl>
+  </section>
+  <section class="card">
+    <h2>ข้อมูลในระบบ</h2>
+    <p class="state" id="st-state"><i></i><span>กำลังตรวจ...</span></p>
+    <ul class="months" id="st-months"></ul>
+    <p class="muted" style="margin-top:8px" id="st-meta"></p>
+  </section>
+  <nav class="more" aria-label="หน้าอื่น">
+    <a class="main" id="st-import" href="./?page=import">นำเข้าข้อมูลเดือนใหม่<span>เลือกไฟล์ .xlsx หรือ .xls จากระบบ 191 ทวนผล แล้วเผยแพร่</span></a>
+    <a href="index.html">หน้าหลัก (มือถือ)<span>สรุป แนวโน้ม ประเภท และส่งออกรูป</span></a>
+    <a href="dashboard.html">dashboard แบบเต็ม<span>สำหรับคอมพิวเตอร์ มีไฟล์ .pptx และรายการเหตุ</span></a>
+    <button type="button" data-p191-signout>ออกจากระบบ<span>ลบข้อมูลที่บันทึกไว้ในเครื่องนี้ และเลิกจำบัญชี</span></button>
+  </nav>
+</main>
+<script type="text/p191-deferred">
+(function () {
+  'use strict';
+  const TH = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+  const monthTh = (m) => TH[Number(m.slice(5, 7)) - 1] + ' ' + (Number(m.slice(0, 4)) + 543);
+  const B = document.body.dataset;
+  document.getElementById('st-email').textContent = B.email || 'ไม่ทราบ';
+  document.getElementById('st-role').textContent = B.owner ? 'เจ้าของ' : (B.canEdit ? 'แก้ไขได้ (นำเข้าและเผยแพร่)' : 'ดูอย่างเดียว');
+  if (!B.canEdit) document.getElementById('st-import').remove();
+  const li = (cls, a, sub, n) => {
+    const e = document.createElement('li'); if (cls) e.className = cls;
+    const mo = document.createElement('span'); mo.className = 'mo'; mo.textContent = a;
+    if (sub) { mo.appendChild(document.createElement('br')); const d = document.createElement('span'); d.className = 'd'; d.textContent = sub; mo.appendChild(d); }
+    const nn = document.createElement('span'); nn.className = 'n'; nn.textContent = n;
+    e.append(mo, nn); return e;
+  };
+  P191.api('status').then((s) => {
+    const st = document.getElementById('st-state');
+    st.className = 'state ' + (s.ok ? 'ok' : 'bad');
+    st.querySelector('span').textContent = s.ok ? 'ตรวจแล้วไม่พบปัญหา' : 'พบปัญหา ' + s.problemCount + ' รายการ กรุณาแจ้งผู้ดูแล';
+    const ul = document.getElementById('st-months');
+    s.months.slice().reverse().forEach((m) => ul.appendChild(li('', monthTh(m.month), m.days + ' วันที่มีข้อมูล', String(m.rows))));
+    ul.appendChild(li('total', 'รวม ' + s.months.length + ' เดือน', '', String(s.incidents)));
+    document.getElementById('st-meta').textContent = 'นำเข้าล่าสุด: ' + (s.lastUpload || 'ยังไม่มี') + ' กฎจัดผล: ' + (s.ruleVersion || '');
+  }, (e) => {
+    const st = document.getElementById('st-state');
+    st.className = 'state bad';
+    st.querySelector('span').textContent = 'ตรวจสถานะไม่สำเร็จ: ' + String(e.message || e).replace(/^[A-Z_]+: /, '');
+  });
+})();
+</script>
+</body>
+</html>
